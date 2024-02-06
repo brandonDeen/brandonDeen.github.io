@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <style>
+    :root {
+      font-size: 14px;
+    }
+
+    body {
+      background-color: rgb(216, 216, 216);
+      line-height: 1.5;
+      margin: 10px auto;
+      max-width: 1200px;
+    }
+
+    .download-link {
+      float: right;
+      border: none;
+      font-family: "Source Serif Pro", "Cambria", "Charter", "Georgia", sans-serif;
+      font-size: 1.5rem;
+      box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      position: sticky;
+      top: 10px;
+      background-color: white;
+      color: hsl(0, 0%, 20%);
+      padding: 5px;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    main {
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0.5in;
+      width: 8.5in;
+      height: 11in;
+      background-color: white;
+      box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+      font-family: "Source Serif Pro", "Cambria", "Charter", "Georgia", sans-serif;
+      color: hsl(0, 0%, 20%);
+    }
+
+    .no-link {
+      color:inherit;
+      text-decoration:none;
+      /* pointer-events:none; */
+    }
+
+    h1,
+    h2,
+    p,
+    ul {
+      margin: 0;
+    }
+
+    ul {
+      padding-left: 12px;
+      list-style-position:inside;
+      font-size:14px;
+    }
+
+    .contact-info {
+      display: flex;
+      color: hsl(0, 0%, 40%);
+      font-size: 1.25rem;
+    }
+
+    .contact-info span::after {
+      content: "|";
+      margin: 0 4px;
+    }
+
+    .contact-info span:last-child::after {
+      content: none;
+    }
+
+    .content-section {
+      margin-top: 1.75rem;
+    }
+
+    .content-section h1 {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    .content-section p {
+      color: #434343;
+    }
+
+    .multicolumn {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .experience-container h2 {
+      font-weight: normal;
+      font-size: 1rem;
+    }
+
+    .heavy-text {
+      font-weight: bold;
+    }
+
+    .italic-text {
+      font-style: italic;
+    }
+
+    @media print {
+      html {
+        height: 11in;
+        width: 8.5in;
+        overflow: hidden;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      main {
+        width: 100%;
+        box-shadow: none;
+      }
+
+      button {
+        display: none;
+      }
+
+      .download-link {
+        display: none;
+      }
+    }
+  </style>
+  <title>Resume</title>
+</head>
+
+<body>
+  <a class="download-link" target="_blank" download="Brandon_Deen_Resume.pdf" href="Brandon_Deen_Resume.pdf">Download</a>
+  <main>
+    <header>
+      <h1>Brandon Deen</h1>
+      <div class="contact-info">
+        <span>brandon.deen47@gmail.com</span>
+        <span><a class="no-link" target="_blank" href="http://brandonDeen.github.io">brandonDeen.github.io</a></span>
+        <span>Mansfield, TX</span>
+      </div>
+      <div class="contact-info"></div>
+    </header>
+    <section class="content-section">
+      <h1>Objective</h1>
+      <p>
+        To identify, investigate, and solve challenging problems that have a meaningful impact. 
+        Whether it is using the latest technology, frameworks, and design patterns, or
+        improving upon an existing solution to make it even better.
+      </p>
+    </section>
+    <hr>
+    <section class="content-section">
+      <h1>Skills</h1>
+      <div class="multicolumn">
+        <div class="experience-container">          
+          <ul>
+            <li>Analytical Problem Solving</li>
+            <li>Communication</li>
+            <li>Creativity</li>
+            <li>Adaptability</li>
+            <li>Collaboration</li>
+          </ul>
+        </div>
+        <div class="experience-container">
+          <ul>
+            <li>Object Oriented: Java</li>
+            <li>Front End: Angular, Javascript, HTML, CSS</li>
+            <li>Database: Oracle SQL, MongoDB, DocumentDB</li>
+            <li>Reporting: OBIEE, Tableau</li>
+            <li>Scripting: Python and Bash</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="content-section">
+      <h1>Experience</h1>
+        <div class="experience-container">
+          <h2>
+            <span class="heavy-text">Application Architect</span> Oct 2022 - Present
+          </h2>
+          <div>
+            <span class="italic-text">Fidelity Investments</span> | Westlake, TX
+          </div>
+          <ul>
+            <li> Design and develop integration, cloud, software patterns, and proofs of concept </li>
+            <li> Collaborate with business leaders to develop longterm technical strategies </li>
+            <li> Ensure applications follow best practices, standards, & governance </li>
+          </ul>
+          <h2>
+            <span class="heavy-text">Software Engineer</span> Jun 2015 – Oct 2022
+          </h2>
+          <div>
+            <span class="italic-text">Fidelity Investments</span> | Westlake, TX
+          </div>
+          <ul>
+            <li><span class="italic-text heavy-text">Corporate Technology Group: Shareholder Accounting and Reporting</span>
+              <ul>
+                <li> Design, develop, deploy, and maintain  new application features using Java, Spring, Oracle SQL, and Angular </li>
+                <li> Support customers by investigating issues and developing scripts to correct issues</li>
+                <li> Lead developer on several initiatives, designed solutions and guiding developers</li>
+                <li> Develop reports and dashboards using OBIEE and Tableau</li>
+                <li> Develop software automation suite using Selenium </li>
+              </ul>
+            </li>
+            <li><span class="italic-text heavy-text">Advanced Process Solutions: Digital Xchange (Tool and API warehouse)</span>
+              <ul>
+                <li> Developed and maintained Jenkins deployment pipelines for AWS resources</li>
+                <li> Worked on migration of MongoDb to DocumentDb </li>
+                <li> Develop, test, and deploy custom user interfaces using Javascript, NodeJs, Angular, MongoDB, and AWS</li>
+              </ul>
+            </li>
+            <li><span class="italic-text heavy-text">Personal Investing: Next Generation Contact Center - Routing</span>
+              <ul>
+                <li>Developed customized routing strategies for Fidelity’s Next Generation Call Center using Javascript & Genesys</li>
+                <li>Designed and developed custom software tools to increase the productivity and reduce complexity of the Next Generation Call Center team and their customers using C#, .NET, and LINQ</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="experience-container">
+          <h2>
+            <span class="heavy-text">12b, Combat Engineer</span> Jun 2008 – Aug 2012
+          </h2>
+          <div>
+            <span class="italic-text">U.S. Army</span> | Fort Leonard Wood, MO
+          </div>
+          <ul>
+            <li>Train and lead team to complete a mission by planning, organizing, and communicating with leadership</li>
+          </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="content-section">
+      <h1>Education</h1>
+      <div class="multicolumn">
+        <div class="education-container">
+          <div>University of Texas – Arlington</div>
+          <div>Bachelor of Science - Software Engineering</div>
+          <div>GPA: 3.3 / 4.0 | Graduated: MAY 2015</div>
+        </div>
+        <div class="education-container">
+          <div>Stephen F. Austin State University</div>
+          <div>Bachelor of Science - Physics</div>
+          <div>GPA: 3.2 / 4.0 | Graduated: DEC 2010</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
