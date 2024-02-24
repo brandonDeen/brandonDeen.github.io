@@ -98,8 +98,8 @@ footer  a { color: #339933; }
 	/*color: #2d2d30;*/
 	font-family: Roboto, sans-serif;
 	background-color: #ffffff;
-	height: 80vh;
-	max-height: 80vh;
+	height: 75vh;
+	max-height: 75vh;
 	border-top: 2px solid black;
 	text-align: center;
 	overflow: auto;
